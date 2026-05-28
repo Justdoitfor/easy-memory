@@ -1,0 +1,12 @@
+[project]
+name = "easy-memory"
+version = "0.1.0"
+description = "Long-term memory for AI Agents"
+authors = [
+    { name = "Leo", email = "wang_workstaion@163.com" }
+]
+readme = "README.md"
+license = "Apache-2.0"
+
+requires-python = ">=3.12"
+dependencies = []
