@@ -167,4 +167,10 @@ def create_exception_from_response(
         503: "Service unavailable. Please try again later",
         504: "Gateway timeout. Please try again later",
     }
-    pass
+    return exception_class(
+        message=response_text or f"HTTP {status_code} error",
+        error_code=error_code,
+        details=details or {},
+        suggestion=suggestions.get(status_code, "Please try again later"),
+        debug_info=debug_info or {}
+    )
