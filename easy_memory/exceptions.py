@@ -76,7 +76,7 @@ class CacheError(AgentMemoryError):
 class VectorStoreError(AgentMemoryError):
     def __init__(self,
                  message: str,
-                 error_code: str = "VECTOR__001",
+                 error_code: str = "VECTOR_001",
                  details: dict = None,
                  suggestion: str = "Please check your vector store configuration and connection",
                  debug_info: dict = None,
